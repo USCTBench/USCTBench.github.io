@@ -59,7 +59,7 @@ section {
     margin: 20px auto;
     padding: 20px;
     background: #ffffff;
-    text-align: left; /* Center align section content */
+    text-align: left;
 }
 
 #overview img {
