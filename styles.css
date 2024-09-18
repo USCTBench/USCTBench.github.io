@@ -14,21 +14,27 @@ body {
 }
 
 header {
-    background: #ffffff;
+    background: #f4f4f4;
     color: #000000;
-    border-bottom: 1px solid #cccccc;
+    padding-top: 50px;
+    padding-bottom: 20px;
 }
 
 header h1 {
     margin: 0;
-    font-size: 2.5em; /* Adjusted font size */
-    line-height: 1.2;
+    font-size: 36px;
+}
+
+header p {
+    margin: 0;
+    font-size: 24px;
+    color: #555;
 }
 
 nav ul {
     list-style: none;
     padding: 0;
-    background: #f4f4f4;
+    background: #eaeaea;
     overflow: hidden;
 }
 
@@ -45,7 +51,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background-color: #eaeaea;
+    background-color: #dcdcdc;
 }
 
 section {
@@ -54,11 +60,20 @@ section {
     padding: 20px;
     background: #ffffff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center; /* Center align section content */
+}
+
+#overview img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto; /* Center the image */
+    border: none; /* Remove border */
 }
 
 footer {
-    background: #f4f4f4;
-    color: #000000;
+    background: #2c3c55;
+    color: #ffffff;
     text-align: center;
     padding: 10px 20px;
     margin-top: 20px;
