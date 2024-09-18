@@ -49,6 +49,11 @@ footer {
     width: 100%;
 }
 
-#about, #dataset, #benchmark, #contact {
+#overview img {
+    max-width: 100%;
+    height: auto;
+}
+
+#overview, #dataset, #benchmark, #contact {
     margin-top: 60px;
 }
