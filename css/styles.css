@@ -14,7 +14,7 @@ body {
     line-height: 1.6;
     color: #333;
     background: #f4f4f4;
-    padding-top: 600px; /* Add padding to prevent content from being hidden behind the fixed header */
+    padding-top: 60px; /* Add padding to prevent content from being hidden behind the fixed header */
 }
 
 /* Header and navigation styles */
@@ -23,10 +23,6 @@ header {
     color: #ffffff;
     padding: 10px 0;
     width: 100%;
-    position: fixed; /* Fixed position at the top */
-    top: 0;
-    left: 0;
-    z-index: 1000; /* Ensure the header is above other content */
 }
 .header-content {
     max-width: 1200px;
