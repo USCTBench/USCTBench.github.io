@@ -1,7 +1,16 @@
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
 
-const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+// Mobile navigation toggle (if needed)
 const mobileMenu = document.querySelector('.mobile-menu');
+const nav = document.querySelector('nav ul');
 
-mobileMenuBtn.addEventListener('click', () => {
-    mobileMenu.classList.toggle('active');
+mobileMenu.addEventListener('click', () => {
+    nav.classList.toggle('active');
 });
