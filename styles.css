@@ -77,3 +77,22 @@ footer {
     padding: 10px 20px;
     margin-top: 20px;
 }
+
+/* Add these styles to your existing styles.css file */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+
