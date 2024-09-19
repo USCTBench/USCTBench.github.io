@@ -8,10 +8,10 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
     });
 });
 
-// Toggle mobile navigation
-const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
+// Mobile navigation toggle (if needed)
 const mobileMenu = document.querySelector('.mobile-menu');
+const nav = document.querySelector('nav ul');
 
-mobileMenuBtn.addEventListener('click', () => {
-    mobileMenu.classList.toggle('active');
+mobileMenu.addEventListener('click', () => {
+    nav.classList.toggle('active');
 });
