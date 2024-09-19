@@ -4,12 +4,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>USCTBench: A Large-scale Multi-frequency Benchmark Datasets for USCT</title>
-    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header>
         <div class="header-content">
-            <h1>USCTBench:A Large-scale Multi-frequency<br>Benchmark Datasets for USCT</h1>
+            <h1>USCTBench: A Large-scale Multi-frequency<br>Benchmark Datasets for USCT</h1>
+            <button class="mobile-menu-btn" aria-label="Toggle navigation">&#9776;</button>
+            <nav class="mobile-menu">
+                <ul>
+                    <li><a href="#overview">Overview</a></li>
+                    <li><a href="#dataset">Dataset</a></li>
+                    <li><a href="#benchmark">Benchmark</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
             <nav>
                 <ul>
                     <li><a href="#overview">Overview</a></li>
@@ -30,7 +40,6 @@
     <section id="dataset">
         <h2>Dataset</h2>
         <p>Our dataset includes anatomically accurate phantoms and corresponding wavefields, simulated with parameters from a real USCT system. It encompasses 72,000 meticulously paired sound speed and wavefield datasets, crafted to ensure versatility and applicability to a broad array of research scenarios.</p>
-        <!-- Table Start -->
         <table>
             <tr>
                 <th>Dataset</th>
@@ -44,17 +53,16 @@
                 <td>8115G</td>
                 <td>7400/800</td>
                 <td>(480,480)</td>
-                <td>(256,256)</td>
+                <td>(480,480)</td>
             </tr>
             <tr>
                 <td>Inverse Problem Dataset</td>
                 <td>42G</td>
                 <td>7200/800</td>
-                <td>(64，480,480)</td>
-                <td>(480,480)</td>
+                <td>(256,256)</td>
+                <td>(256,256)</td>
             </tr>
         </table>
-        <!-- Table End -->
     </section>
 
     <section id="benchmark">
@@ -71,5 +79,6 @@
     <footer>
         <p>© 2024 USCTBench. All rights reserved.</p>
     </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>
