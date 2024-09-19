@@ -10,7 +10,7 @@ html {
 }
 
 body {
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'Arial', sans-serif;
     line-height: 1.6;
     color: #333;
     background: #f4f4f4;
@@ -55,16 +55,6 @@ nav ul li a:hover,
 nav ul li a.active {
     color: #eaeaea;
     border-bottom: 2px solid #eaeaea;
-}
-
-/* Style for mobile menu */
-.mobile-menu {
-    display: none;
-}
-
-.mobile-menu-btn {
-    display: none;
-    cursor: pointer;
 }
 
 /* Section styles */
@@ -130,28 +120,6 @@ img {
     }
 
     nav ul li {
-        display: block;
-        text-align: center;
         margin: 10px 0;
     }
-
-    .mobile-menu-btn {
-        display: block;
-    }
-
-    .mobile-menu {
-        display: block;
-        position: absolute;
-        top: 60px;
-        left: 0;
-        width: 100%;
-        background: #0056b3;
-    }
-
-    .mobile-menu ul {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
 }
-
