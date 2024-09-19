@@ -123,6 +123,12 @@ img {
     height: auto;
 }
 
+section img {
+    display: block; /* Removes bottom whitespace below the image */
+    margin-left: auto;
+    margin-right: auto;
+}
+
 /* Add media query for responsiveness */
 @media (max-width: 768px) {
     nav ul {
