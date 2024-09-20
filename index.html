@@ -23,13 +23,21 @@
 
     <section id="overview">
         <h2>Overview of USCTBench</h2>
-        <p>Ultrasound Computed Tomography (USCT) is a radiation-free imaging technique for achieving high-resolution clinical images. USCTBench is an extensive, high-fidelity multi-frequency USCT breast imaging dataset designed to catalyze diverse, meticulous, and reproducible USCT research.</p>
+        <p>USCTBench is a project that supports research in Ultrasound Computed Tomography (USCT) technology by providing a large-scale, 
+            high-fidelity multi-frequency USCT breast imaging dataset, comprising 72,000 meticulously paired sound speed and wavefield data sets 
+            that simulate diverse breast anatomies from real USCT system parameters. The dataset aims to advance USCT image reconstruction techniques 
+            and benchmark the performance of various deep learning methods through standardized evaluation metrics.</p>
         <img src="USCT.png" alt="Schematic diagram of a USCT system">
     </section>
 
     <section id="dataset">
         <h2>Dataset</h2>
-        <p>Our dataset includes anatomically accurate phantoms and corresponding wavefields, simulated with parameters from a real USCT system. It encompasses 72,000 meticulously paired sound speed and wavefield datasets, crafted to ensure versatility and applicability to a broad array of research scenarios.</p>
+        <p>USCT dataset is divided into Forward Modeling Dataset and Inverse Problem Dataset as shown in Table. 
+            It is worth mentioning that in order to enhance the generalization ability, we add 200 samples of uniform wave velocity 
+            field in the Forward Modeling Datset. For each phantom in our dataset, wave fields have been meticulously simulated in nine frequencies
+            (300k,350k...,750k Hz), taking into account 256 distinct sources distributed across the USCT's annular transducer array. 
+            This simulation process is powered by a dedicated Helmholtz equation solver, ensuring that the generated wavefields are both accurate 
+            and reflective of real-world USCT operations.</p>
         <!-- Table Start -->
         <table>
             <tr>
@@ -59,12 +67,17 @@
 
     <section id="benchmark">
         <h2>Benchmark</h2>
-        <p>USCTBench serves as a pivotal platform for conducting impartial comparisons among various methods. Our evaluation encompasses five exemplary methods (UNet, FNO, BFNO, AFNO, and MGCNN) applied to the Forward Modeling task, as well as an assessment of four prevalent methods (NIO, FCNN, DeepONet, and InversionNet) against the Inversion Problem task.</p>
+        <p>USCTBench serves as a pivotal platform for conducting impartial comparisons among various methods. 
+            Our evaluation encompasses five exemplary methods (UNet, FNO, BFNO, AFNO, and MGCNN) applied to 
+            the Forward Modeling task, as well as an assessment of four prevalent methods 
+            (NIO, FCNN, DeepONet, and InversionNet) against the Inversion Problem task.
+            The experiments is showed in the following table.
+        </p>
     </section>
 
     <section id="contact">
         <h2>Contact</h2>
-        <p>If you have any questions or need further information, please feel free to contact us.</p>
+        <p>If you have any questions or need further our dataset for research value, please feel free to contact us.</p>
         <p>Email: contact@usctbench.com</p>
     </section>
 
